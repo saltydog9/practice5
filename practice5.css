@@ -1,0 +1,91 @@
+body {
+  background-color:mediumblue;
+  background-blend-mode: multiply;
+  background-image:url("star.jpg");
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-auto-rows: 120px;
+  grid-gap:10px;
+}
+.container div {
+   border-radius: 10px;
+   background-color: darkgreen;
+   background-blend-mode: multiply;
+   background-image:url("star.jpg");
+   color:white;
+
+}
+#b10 {
+  display: grid;
+  grid-template-columns:1fr;
+  grid-gap: 10px;
+  overflow:auto;
+  text-align:center;
+}
+#b10 div {
+  width: 440px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: darkgreen;
+  color:white;
+}
+.ox1{
+  grid-column:1/3;
+  grid-row: 1/3;
+}
+.ox10{
+  grid-column: 1/3;
+  grid-row:3/5;
+}
+.container1{
+  display: inline-block;
+}
+.container2{
+  display: none;
+}
+.container1:hover .container2 {
+  display: block;
+}
+.but {
+  width:80px;
+  height: 40px;
+  border-radius:10px;
+  background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#2f78d1;
+  margin-left:5px;
+}
+#inp1{
+  width:78px;
+  height: 38px;
+  padding: 0;
+  margin-left:5px;
+  background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+  background-color:#2f78d1;
+  border: none;
+  border-radius:10px;
+  font-size:30px;
+  color: white;
+}
+#b11,#b12,#b13,#b14,#b15{
+  border:1px solid white;
+  font-size: 40px;
+}
+#bo2,#bo3,#bo4,#bo5{
+  font-size: 80px;
+  text-align:center;
+}
+#bo6,#bo7,#bo8,#bo9{
+  font-size: 20px;
+  color: white;
+  overflow:auto;
+  text-align: center;
+}
+img {
+  width:440px;
+  height: 200px;
+   border-radius: 10px;
+  object-fit: fill;
+}
